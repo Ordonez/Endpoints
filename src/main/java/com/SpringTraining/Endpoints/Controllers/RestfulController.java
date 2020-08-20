@@ -15,9 +15,9 @@ public class RestfulController {
 
     @GetMapping("/restful")
     public com.SpringTraining.Endpoints.entity.Restful restful(
-            @RequestParam(value = "The Daily Restful Services Training", defaultValue = "World") String name) {
+    @RequestParam(value = "The Daily Restful Services Training", defaultValue = "World") String name) {
         return new com.SpringTraining.Endpoints.entity.Restful(counter.incrementAndGet(),
-                String.format(template, "The Daily Restful Services Training"));
+        String.format(template, "The Daily Restful Services Training"));
     }
 }
 
